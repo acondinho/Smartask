@@ -4,5 +4,17 @@
     <string name="app_name">Smartask</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="checkTypeMsg">Check Type</string>
+    <string name="themeTypeMsg">Theme</string>
+    <string-array name="checkTypeArray">
+        <item>Check</item>
+        <item>X</item>
+        <item>Ducky</item>
+    </string-array>
+    <string-array name="themeArray">
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
 
 </resources>
