@@ -61,6 +61,19 @@ public class Smartask extends Activity {
     }
 
     protected void clearCompletedTasks() {
+        int rows = mainTable.getChildCount();
 
+        for (int i = 0; i < rows;) {
+            TableRow curr = (TableRow) mainTable.getChildAt(i);
+            CheckBox checkCurr = (CheckBox) curr.getChildAt(0);
+
+            if (checkCurr.isChecked()) {
+                mainTable.removeViewAt(i);
+                rows = mainTable.getChildCount();
+                i = 0;
+            } else {
+                i++;
+            }
+        }
     }
 }
