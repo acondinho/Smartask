@@ -7,10 +7,14 @@
     <string name="title_activity_settings">Settings</string>
     <string name="checkTypeMsg">Check Type</string>
     <string name="themeTypeMsg">Theme</string>
+
     <string-array name="checkTypeArray">
         <item>Check</item>
         <item>X</item>
         <item>Ducky</item>
+        <item>Niggaz Dickz</item>
+        <item>Boats N Hoes</item>
+        <item>Fuuuuck</item>
     </string-array>
     <string-array name="themeArray">
         <item>Dark</item>

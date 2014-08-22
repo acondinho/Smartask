@@ -14,20 +14,20 @@
         android:layout_height="wrap_content"
         android:id="@+id/CheckText"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:paddingBottom="32dp"
+        android:paddingBottom="26dp"
         android:paddingRight="40dp"
-        android:paddingTop="0dp"
-        android:paddingLeft="0dp" />
+        android:paddingTop="12dp"
+        android:paddingLeft="0dp"
+        android:layout_alignParentStart="true" />
 
     <Spinner
         android:id="@+id/checkTypeSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/themeTypeSpinner"
+        android:layout_toEndOf="@+id/CheckText"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/CheckText"
-        android:layout_toEndOf="@+id/CheckText" />
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:text="@string/themeTypeMsg"
@@ -35,9 +35,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/themeText"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_below="@+id/CheckText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:paddingBottom="26dp"
+        android:paddingRight="85dp"
+        android:paddingTop="12dp"
+        android:paddingLeft="0dp"
+        android:layout_toStartOf="@+id/checkTypeSpinner"
+        android:layout_below="@+id/checkTypeSpinner"
+        android:layout_toLeftOf="@+id/checkTypeSpinner" />
 
     <Spinner
         android:id="@+id/themeTypeSpinner"
@@ -45,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/CheckText"
         android:layout_alignTop="@+id/themeText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignLeft="@+id/checkTypeSpinner"
+        android:layout_alignStart="@+id/checkTypeSpinner" />
+
 </RelativeLayout>
